@@ -1,6 +1,6 @@
 import datetime
 
-from instabot.singleton import Singleton
+from instabot import Singleton
 
 
 class BotState(object):

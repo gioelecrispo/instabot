@@ -1,4 +1,4 @@
-from instabot.singleton import Singleton
+from instabot import Singleton
 
 
 class BotCache(object):
