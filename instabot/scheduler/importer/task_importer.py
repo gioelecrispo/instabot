@@ -22,5 +22,3 @@ def import_tasks(package_path):
                 tasks[attribute.task_id] = attribute
 
     return tasks
-
-

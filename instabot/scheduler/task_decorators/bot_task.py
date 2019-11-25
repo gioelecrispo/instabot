@@ -10,4 +10,3 @@ class BotTask(AbstractDecorator):
         config = task.config
         bot.logger.info("TASK [STARTING] -> `{}` will be executed with "
                         "the following config: {}".format(task_name, config))
-

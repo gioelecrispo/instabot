@@ -32,12 +32,14 @@ class BotScheduler:
     # def run(self, task_ids=None, task_configs=None, task_schedules=None):
     #     if task_ids is None:
     #         tasks_ids = import_tasks(self.TASKS_DIRECTORY)
-    #     for task_name, task in self.configuration.task_params["schedule_config"].items():
+    #     for task_name, task in self.configuration.
+        #     task_params["schedule_config"].items():
     #         if task["active"]:
     #             self.bots[task_name] = copy.deepcopy(self.bots["original"])
-    #             self.logger.info("BOT-SCHEDULER - Enabling schedule: <{}> every: {} {}"
-    #                              .format(task["function_name"], task["schedule"]["value"],
-    #                                      task["schedule"]["time_unit"]))
+    #             self.logger.info("BOT-SCHEDULER - Enabling schedule:
+        #             <{}> every: {} {}".format(task["function_name"],
+        #             task["schedule"]["value"], task["schedule"]
+        #             ["time_unit"]))
     #             bot_function = getattr(bot_functions, task["function_name"])
     #             scheduler = schedule.every(task["schedule"]["value"])
     #             setattr(scheduler, "unit", task["schedule"]["time_unit"])
@@ -46,7 +48,8 @@ class BotScheduler:
     #             #  - bot related to that task,
     #             #  - configuration related to that task (scope limiting)
     #             scheduler.do(bot_function, task_name, self.bots[task_name],
-    #                          self.configuration.task_params["task_config"][task_name])
+    #                          self.configuration.task_params["task_config"]
+        #                          [task_name])
 
         while True:
             schedule.run_pending()

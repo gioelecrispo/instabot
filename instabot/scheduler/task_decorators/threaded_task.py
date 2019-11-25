@@ -13,4 +13,3 @@ class ThreadedTask(AbstractDecorator):
         job_thread = threading.Thread(target=self.function, args=(task,))
         job_thread.start()
         return job_thread
-

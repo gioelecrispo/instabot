@@ -30,6 +30,7 @@ setup(
         "six>=1.12.0",
         "huepy>=0.9.8.1",
         "pytz>=2019.1",
+        'decoripy>=0.0.3'
     ],
     classifiers=[
         # How mature is this project? Common values are

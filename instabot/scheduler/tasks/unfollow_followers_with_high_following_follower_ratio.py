@@ -28,5 +28,3 @@ class UnfollowFollowersWithHighFollowingFollowerRatio(Task):
                 ratio = float(following_count / follower_count)
                 if ratio > self.config["ratio"]:
                     self.bot.unfollow(user_id)
-
-

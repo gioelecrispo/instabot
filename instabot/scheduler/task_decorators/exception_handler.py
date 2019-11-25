@@ -13,4 +13,3 @@ class ExceptionHandler(AbstractDecorator):
         except ActionBlockedException as e:
             bot.logger.info("TASK [STOPPED] -> `{}` has stopped because"
                             " of {}".format(task_name, e.__cause__))
-
